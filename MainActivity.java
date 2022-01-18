@@ -34,9 +34,10 @@ public class MainActivity<gestionebrani> extends AppCompatActivity {
         gb= new Gestionebrani();
         btnInserisci.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
+                
 
-                gb.addBrano(String txtTitolo.getText().toString());
+                gb.addBrano(txtTitolo.getText().toString());
 
             }
         });
